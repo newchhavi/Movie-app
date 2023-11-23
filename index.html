@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div  class = "nav_main_div">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoB6I51JdK8ZvxbTq8Be8fbGqMMLihmMJXHA&usqp=CAU" alt="">
+            <p>Movies</p>
+            <p>TV Shows</p>
+            <p>People</p>
+            <p>More</p>
+        </div>
+        <div id = "nav_right">
+           
+            <input type="text"  id = "search" placeholder="Enter Movies, TVShows , Persons">
+            <button id = "searchBtn">Search</button>
+            <a href="login.html"><p>Sign Out</p></a>
+           
+        </div>
+
+    </div>
+
+    
+    <div class = "slideshow">
+        <img src="https://images.ui8.net/uploads/showcase-6_1593440140873.png" alt="Not Found" id = "slideImage">
+       </div>
+
+       <!-- <div id = "movie_banner">
+        <img src="https://marketplace.canva.com/EAFJolArKks/1/0/1600w/canva-red-black-and-white-simple-movie-review-linkedin-banner-gjkURRVC2Mw.jpg" alt="">
+       </div> -->
+
+       <div id = "trending">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXbrgG_sbH9RzJ2J87_Mg7jRqb54owZjwMXUJ6enM-py30k1p1QB7m7_42rL0IyQBQMOQ&usqp=CAU" alt="" ></div>
+        <div><h2>Trending Movies</h2></div>
+        <div id = "btn_div">
+            <button class = "sort_btn" onclick="sortinglh()">Sort Low to High</button>
+            <button  class = "sort_btn" onclick="sortinghl()">Sort High to Low</button>
+            <select id = "sortbyrate">
+                 <option value = "default">Rate</option>
+                <option value = "asc">Low to High</option>
+                <option value="dsc">High to Low</option>
+
+             </select> 
+
+            
+            
+        </div>
+
+    
+       </div>
+
+       <div id = "container"></div>
+       <div id = "page_btn">
+       <button class = "prev">Prev</button>
+       <p id = "currentPage"></p>
+       <button class = "next">Next</button>
+    </div>
+
+    <div id = "pageContainer"></div>
+       
+
+       <!-- modal Box -->
+
+       
+       </div>
+
+
+</body>
+</html>
+<script src="index.js"></script>
+
+
+
+
+

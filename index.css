@@ -1,0 +1,457 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* craousel */
+.slideshow{
+    width: 100%;
+    height: 600px;
+    padding: 20px 40px;
+    /* border: 1px solid black; */
+    
+}
+
+#slideImage{
+    width: 100%;
+    height: 600px;
+}
+
+/* navbar */
+
+.nav_main_div{
+    width: 100%;
+    height: auto;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.nav_main_div div{
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+
+}
+.nav_main_div div img {
+    width: 40%;
+    height: 70px;
+}
+
+.nav_main_div div p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav_main_div div p:hover{
+    color: brown;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav_main_div div input{
+    width: 400px;
+    margin-left: 100px;
+    padding: 13px 40px;
+    border-radius: 14px;
+    border: none;
+  
+}
+.nav_main_div div #searchBtn{
+    padding: 10px 20px;
+    margin-left: -100px;
+    cursor: pointer;
+}
+#searchBtn:hover{
+    background-color: #d32f2f;
+    color: white;
+
+}
+#nav_right{
+    padding-right: 80px;
+}
+
+/* #movie_banner{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+  
+} */
+
+
+
+#trending {
+    display: flex; 
+    margin-left: 40px;
+    margin-top: 20px;
+  
+}
+
+#trending img{
+    width: 90%;
+}
+#btn_div{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.sort_btn{
+    padding: 10px 30px;
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 12px;
+    background-color: rgb(158, 241, 213);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+      
+}
+
+.sort_btn:hover , .prev:hover, .next:hover{
+    background-color:#141414;
+    color: white;
+}
+
+
+#trending h2{
+    margin-top: 70px;
+    margin-left: -80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* append Data */
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+    /* margin-top: -20px; */
+    /* background-color: #141414; */
+
+   
+}
+
+.box img {
+    width: 100%;
+    height: 300px;
+}
+
+.box {
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    margin: auto;
+    /* padding: 10px; */
+    flex-basis: 25%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    /* box-shadow: rgba(156, 13, 13, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+
+.box .overlap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* min-height: auto; */
+    position: absolute;
+    bottom: -100%;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+    left: 0;
+    transition: 0.5s;
+    background-color:rgb(236, 47, 47);
+}
+
+.box:hover .overlap {
+    bottom: 0%;
+}
+
+#overviewBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.box span {
+    color: rgb(38, 164, 65);
+    /* display: inline-block; */
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+h3{
+    font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: rgb(15, 23, 42); */
+    color:white
+}
+
+ #overview{
+    color: rgb(36, 37, 37);
+    font-family: cursive;
+    font-size: 14px;
+ }
+
+ .openModalBtn {
+    background-color: rgb(242, 226, 53);
+    /* margin-left: 60px; */
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-weight: bold;
+ }
+ .removeBtn{
+    background-color: rgb(235, 73, 86);
+    /* margin-left: 60px; */
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-weight: bold;
+
+ }
+
+ .editBtn{
+    background-color: rgb(117, 182, 239);
+    /* margin-left: 60px; */
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-weight: bold;
+
+ }
+
+
+ /* modal box */
+
+ .modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+ .modalContainer .modal {
+    display: none; 
+    padding: 2rem;  
+    text-align: center;
+    position: relative;
+    background: #e6e6e6;
+    margin: 2 rem;
+    width: 30rem;
+}
+
+.modalContainer .modal.active{
+    display: inline-block;
+
+}
+
+.modal img {
+    height: 230px;
+    width: 85%;
+    margin-bottom: 10px;
+}
+#title{
+    color: black;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+#pop_overview{
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(34, 33, 33);
+    margin-bottom: 10px;
+}
+
+#release{
+    color: black;
+    font-family: cursive;
+}
+.closeModalBtn {
+    background-color: #46baf0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.closeModalBtn:hover {
+    background-color: #d32f2f;
+}
+
+#page_btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+}
+
+
+#sortbyrate{
+    padding: 10px 30px ;
+    margin-left: 30px;
+    border-radius: 12px;
+}
+
+#pageContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    margin-top: -30px;
+}
+#pageContainer button{
+    width: 30px;
+    height: 30px;
+   margin-bottom: 50px;
+   border: none;
+}
+
+#pageContainer button:hover{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #e0ef39;
+    border: none;
+    font-weight: bold;
+
+}
+
+.next, .prev {
+    padding: 10px 30px;
+    border: none;
+    font-weight: bold;
+}
+
+#page_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+ 
+
+/* Style for the edit modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center; 
+     justify-content: center;
+    flex-direction: column;
+  }
+  
+  .editForm{
+    padding: 2rem;  
+    text-align: center;
+    position: relative;
+    background: #fff;
+    margin: 2 rem;
+    width: 35rem;
+  }
+
+  /* Style for the save edit button */
+  .saveEditBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+   
+  .saveEditBtn:hover {
+    background-color: #2980b9;
+  }
+
+  #editMovie{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+    color: black;
+   
+  }
+
+  label{
+font-size: 16px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+
+  }
+
+  .editForm input  {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  #editOverview{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 100px;
+  }
+
+  
+  
+  
